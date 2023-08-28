@@ -1,0 +1,71 @@
+/*gradient animation*/
+@keyframes gradientAnimation {
+    0%, 100% {
+        background-position: 100% 0%;
+    }
+    
+    50% {
+        background-position: 0% 100%;
+    }
+}
+
+@keyframes breatheAnimation {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.05); 
+    }
+}
+
+body {
+    background: rgb(36, 28, 28);
+    background: linear-gradient(to right, rgba(36, 28, 28, 1) 0%, rgba(34, 38, 48, 1) 25%, rgba(32, 48, 68, 1) 50%, rgba(28, 44, 106, 1) 75%, rgba(28, 60, 148, 1) 100%);
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s infinite;
+}
+
+#slogan {
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:26px;
+}
+
+#content {
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:60px;
+    transform: translate(23%);
+}
+
+.all-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    animation: breatheAnimation 5s infinite;
+}
+
+.logo-container {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.image-container img {
+    max-width: 100%;
+    border: 3px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
