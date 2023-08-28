@@ -11,10 +11,10 @@
 
 @keyframes breatheAnimation {
     0%, 100% {
-        transform: translate(-50%, -50%) scale(1);
+        transform: scale(1);
     }
     50% {
-        transform: translate(-50%, -50%) scale(1.05); 
+        transform: scale(1.05); 
     }
 }
 
@@ -23,39 +23,45 @@ body {
     background: linear-gradient(to right, rgba(36, 28, 28, 1) 0%, rgba(34, 38, 48, 1) 25%, rgba(32, 48, 68, 1) 50%, rgba(28, 44, 106, 1) 75%, rgba(28, 60, 148, 1) 100%);
     background-size: 400% 400%;
     animation: gradientAnimation 5s infinite;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    overflow: hidden; /* Hide scrollbars */
 }
 
 #slogan {
     color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size:26px;
+    font-size: 2vw;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 #content {
     color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size:60px;
-    transform: translate(23%);
+    font-size: 5vw;
+    text-align: center;
 }
 
 .all-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
+    padding: 20px;
+    text-align: center;
     animation: breatheAnimation 5s infinite;
+    height: 100vh; /* Fixed height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo-container {
-    margin: auto;
+    margin: 0 auto;
     width: 50%;
     padding: 10px;
 }
 
-.image-container img {
+.logo-container img {
     max-width: 100%;
-    border: 3px solid #333;
+    /* Removed border */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -68,4 +74,33 @@ ul {
 a {
     text-decoration: none;
     color: #000;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #slogan {
+        font-size: 4vw;
+    }
+
+    #content {
+        font-size: 8vw;
+    }
+
+    .logo-container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    #slogan {
+        font-size: 5vw;
+    }
+
+    #content {
+        font-size: 10vw;
+    }
+
+    .logo-container {
+        width: 90%;
+    }
 }
