@@ -22,7 +22,7 @@ body {
     background: rgb(36, 28, 28);
     background: linear-gradient(to right, rgba(36, 28, 28, 1) 0%, rgba(34, 38, 48, 1) 25%, rgba(32, 48, 68, 1) 50%, rgba(28, 44, 106, 1) 75%, rgba(28, 60, 148, 1) 100%);
     background-size: 400% 400%;
-    animation: gradientAnimation 5s infinite;
+    animation: gradientAnimation 10s infinite;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 100vh;
@@ -45,7 +45,7 @@ body {
 .all-content {
     padding: 20px;
     text-align: center;
-    animation: breatheAnimation 5s infinite;
+    animation: breatheAnimation 10s infinite;
     height: 100vh; /* Fixed height */
     display: flex;
     flex-direction: column;
@@ -103,4 +103,8 @@ a {
     .logo-container {
         width: 90%;
     }
+}
+
+img{
+    width: 332px
 }
