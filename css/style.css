@@ -1,5 +1,5 @@
 /*gradient animation*/
-@keyframes gradientAnimation {
+/* @keyframes gradientAnimation {
     0%, 100% {
         background-position: 100% 0%;
     }
@@ -7,7 +7,7 @@
     50% {
         background-position: 0% 100%;
     }
-}
+} */
 
 @keyframes breatheAnimation {
     0%, 100% {
@@ -19,8 +19,8 @@
 }
 
 body {
-    background: rgb(36, 28, 28);
-    background: linear-gradient(to right, rgba(36, 28, 28, 1) 0%, rgba(34, 38, 48, 1) 25%, rgba(32, 48, 68, 1) 50%, rgba(28, 44, 106, 1) 75%, rgba(28, 60, 148, 1) 100%);
+    /* background: rgb(36, 28, 28); */
+    /* background: linear-gradient(to right, rgba(36, 28, 28, 1) 0%, rgba(34, 38, 48, 1) 25%, rgba(32, 48, 68, 1) 50%, rgba(28, 44, 106, 1) 75%, rgba(28, 60, 148, 1) 100%); */
     background-size: 400% 400%;
     animation: gradientAnimation 10s infinite;
     margin: 0;
@@ -30,14 +30,14 @@ body {
 }
 
 #slogan {
-    color: white;
+    color: #231f20;
     font-size: 2vw;
     text-align: center;
     margin-bottom: 1rem;
 }
 
 #content {
-    color: white;
+    color: #231f20;
     font-size: 5vw;
     text-align: center;
 }
@@ -62,7 +62,7 @@ body {
 .logo-container img {
     max-width: 100%;
     /* Removed border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 ul {
